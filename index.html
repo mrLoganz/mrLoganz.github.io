@@ -10,10 +10,11 @@
 	</head>
 	<body>
 		<script src="webvr-polyfill.js"></script>
+		<script>var polyfill = new WebVRPolyfill();</script>
 		<script src="three.js"></script>
     		<script src="WebVR.js"></script>
 		<script>
-		var polyfill = new WebVRPolyfill();
+		
 		var scene = new THREE.Scene();
 		var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
